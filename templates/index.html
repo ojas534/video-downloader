@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Video Downloader</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Downloader</h1>
+        <p class="subtitle">Download videos and audio easily.</p>
+
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Paste video URL here...">
+            <button id="fetchBtn">Fetch Info</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Fetching video details...</p>
+        </div>
+
+        <div id="error" class="hidden error-box"></div>
+
+        <div id="videoInfo" class="hidden card">
+            <img id="thumbnail" src="" alt="Video Thumbnail">
+            <h3 id="title"></h3>
+            
+            <label for="formatSelect">Select Quality:</label>
+            <select id="formatSelect"></select>
+            
+            <button id="downloadBtn" class="download-btn">Download Now</button>
+            <p id="downloadLoading" class="hidden loading-text">Downloading... please wait, this may take a moment.</p>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
